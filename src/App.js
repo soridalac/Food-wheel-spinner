@@ -5,11 +5,10 @@ import SearchBar from './components/SearchBar.js';
 import Yelp from './util/Yelp.js';
 
 function App() {
-  const [businesses, setBusinesses] = useState([]);
+  const [businesses, setBusinesses] = useState([])
 
   const searchYelp = (term, location, sortBy) => {
-    Yelp.searchYelp(term, location, sortBy)
-    .then(businesses => {
+    Yelp.search(term, location, sortBy).then(businesses => {
       setBusinesses(businesses);
     });
   }
@@ -19,7 +18,7 @@ function App() {
         <SearchBar searchYelp={searchYelp} />
         <BusinessList businesses={businesses} />
       </div>
-  );
+  )
 }
 
 export default App;
