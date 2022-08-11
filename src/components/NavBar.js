@@ -1,63 +1,18 @@
-import React, { Component } from 'react';
-import '../App.css';
-// import HomePage from './HomePage.js';
-// import MyGalleries from './MyGalleries.js';
-// import Channels from './Channels.js';
-import { Menu } from 'semantic-ui-react';
+import React from "react";
+import "../App.css";
+import { Link } from "react-router-dom";
 
-const menuStyle = {
-    zIndex: '2000',
-    padding: '0 10%'
-};
+export default function Nav(){
 
-class NavBar extends Component {
+  return(
+        <div className="navbar">
+          <div className="logo">Shopio</div>
+           <ul className="nav-links">
+              <Link to="/">Home</Link>
+              <Link to="/about">About</Link>
+              <Link to="/shop">Shop</Link>
+           </ul>
+        </div>
+  );
 
-    constructor(props){
-        super(props);
-        this.state = {
-            activeComponent: "HomePage"
-        }
-    }
-
-    _handleItemClick = (e, { name }) => {
-        this.props.handler(name);
-        this.setState({
-            activeComponent: name
-        });
-    };
-
-    render () {
-
-        return (
-            <Menu style={menuStyle} fixed='top' pointing>
-                <Menu.Item
-                    name='HomePage'
-                    active={this.state.activeComponent === 'HomePage'}
-                    onClick={this._handleItemClick}
-                >
-                    Home Page
-                </Menu.Item>
-                <Menu.Item
-                    name='MyGalleries'
-                    active={this.state.activeComponent === 'MyGalleries'}
-                    onClick={this._handleItemClick}
-                >
-                    My Galleries
-                </Menu.Item>
-                <Menu.Item
-                    name='Channels'
-                    active={this.state.activeComponent === 'Channels'}
-                    onClick={this._handleItemClick}
-                >
-                    Channels
-                </Menu.Item>
-                <Menu.Menu position='right'>
-                    <Menu.Item>
-                    </Menu.Item>
-                </Menu.Menu>
-            </Menu>
-        )
-    }
 }
-
-export default NavBar;

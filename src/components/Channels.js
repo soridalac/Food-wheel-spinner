@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Header, Divider } from 'semantic-ui-react';
-import '../App.css';
+
 
 const Channels = () => {
     const [name, setName] = useState('circle');
@@ -11,13 +11,13 @@ const Channels = () => {
     }, Math.floor(Math.random() * 10000) + 1);
     };
 
+
     return (
         <div
             className = "Channels">
             <Header as='h2'>Channels</Header>
             <Divider style={{ width: '60%', margin: 'auto', marginBottom: '20px' }}/>
             <div className="arrow"></div>
-      
             <ul className={name}>
                 <li>
                 <div className="text" contentEditable="true" spellCheck="false">1</div>
@@ -58,7 +58,8 @@ const Channels = () => {
             </ul>
             <button className="spin-button" onClick={startRotation}>SPIN</button>
       {/* <section>
-        <SearchBars onSubmit={fetchRestaurants}/>
+        <SearchBarSpinner searchYelp={searchYelp}/>
+        <BusinessForSpinnerList businesses={businesses} />
       </section>
       <span>Your destination:</span> */}
       </div>

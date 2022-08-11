@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Header, Divider } from 'semantic-ui-react';
+// import { Header, Divider } from 'semantic-ui-react';
 import '../App.css';
 import BusinessList from './BusinessList.js';
 import SearchBar from './SearchBar.js';
@@ -14,14 +14,13 @@ const MyGalleries = () => {
         setBusinesses(businesses);
         });
     }
-        return (
-            <div
-                className = "MyGalleries">
-                <Header as='h2'>MyGalleries</Header>
-                <Divider style={{ width: '60%', margin: 'auto', marginBottom: '20px' }}/>
-                <h1>What should we eat?</h1>
-                <SearchBar searchYelp={searchYelp} />
-                <BusinessList businesses={businesses} />
+    return (
+            <div>
+                <div className='App'>
+                    <h1>What to eat</h1>
+                    <SearchBar searchYelp={searchYelp} />
+                    <BusinessList businesses={businesses} />
+                </div>
             </div>
         )
     }
