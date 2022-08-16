@@ -50,7 +50,7 @@ button {
     z-index: 3;
     position: absolute;
     top: 78vh;
-    right: 47.5vw;
+    right: 48.5vw;
 }
   
 #result{
@@ -72,3 +72,10 @@ input {
     font-size: 1.8rem;
     color: #fff;
   } */
+
+  .wheel {
+    transform: rotate(-90deg);
+    transform-origin: left 0;
+    position: absolute;
+    bottom: 0;
+  }

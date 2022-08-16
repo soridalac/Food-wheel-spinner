@@ -3,7 +3,7 @@ import "./WheelSpinner.css";
 
 const WheelSpinner = () => {
     // eslint-disable-next-line
-    const [businesses, setBusinesses] = useState(['taco', 'dessert', 'cake', 'boba', 'sushi', 'burger', 'pizza', 'ice cream', 'sandwich']);
+    const [businesses, setBusinesses] = useState(['taco', 'dessert', 'cake', 'sushi', 'ice cream', 'sandwich', 'salad', 'spin again', 'italian']);
     // const [radius, setRadius] = useState(75); // PIXELS
     const [rotate, setRotate] = useState(0); // DEGREES
     const [easeOut, setEaseOut] = useState(0); // SECONDS
