@@ -18,7 +18,7 @@ const FoodGalleries = () => {
     return (
             <div>
                 <div className='App'>
-                    <h1>What to eat</h1>
+                    <h1 className='title'>Eat like you love yourself</h1>
                     <SearchBar searchYelp={searchYelp} />
                     <WheelSpinner />
                     <BusinessList businesses={businesses} />

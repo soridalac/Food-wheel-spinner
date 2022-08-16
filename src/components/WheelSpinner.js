@@ -3,7 +3,7 @@ import "./WheelSpinner.css";
 
 const WheelSpinner = () => {
 
-    const [businesses, setBusinesses] = useState(['taco', 'breakfast', 'dessert', 'cake', 'boba', 'boba', 'boba', 'boba']);
+    const [businesses, setBusinesses] = useState(['taco', 'dessert', 'cake', 'boba', 'sushi', 'burger', 'pizza', 'ice cream', 'sandwich']);
     // const [radius, setRadius] = useState(75); // PIXELS
     const [rotate, setRotate] = useState(0); // DEGREES
     const [easeOut, setEaseOut] = useState(0); // SECONDS
@@ -153,7 +153,7 @@ const WheelSpinner = () => {
 
     return (
       <div className="App">
-        <h1>Spinning Food Wheel</h1>
+        <h1 className='title'>Spinning Food Wheel</h1>
         <span id="selector">&#9660;</span>
         <canvas
           id="wheel"
@@ -176,13 +176,6 @@ const WheelSpinner = () => {
             spin
           </button>
         )}
-        {/* <div className="display">
-          <span id="readout">
-            YOU WON:{"  "}
-            <span id="result">{businesses[result]}</span>
-          </span>
-        </div> */}
-         
       </div>
     );
   }

@@ -49,7 +49,7 @@ button {
     font-size: 40px;
     z-index: 3;
     position: absolute;
-    top: 102vh;
+    top: 101vh;
     right: 47.5vw;
 }
   
@@ -63,3 +63,12 @@ input {
     border:none;
     border-bottom: 1px solid black;
 }
+
+/* .title {
+    padding: .66rem 0;
+    text-align: center;
+    background-color: #cca353;
+    font-family: Poppins, sans-serif;
+    font-size: 1.8rem;
+    color: #fff;
+  } */
