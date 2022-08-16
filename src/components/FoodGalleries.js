@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import './MyGalleries.css';
+import './FoodGalleries.css';
 import BusinessList from './BusinessList.js';
 import SearchBar from './SearchBar.js';
 import Yelp from '../util/Yelp.js';
 import WheelSpinner from './WheelSpinner.js';
 
-const MyGalleries = () => {
+const FoodGalleries = () => {
 
     const [businesses, setBusinesses] = useState([])
 
@@ -14,8 +14,6 @@ const MyGalleries = () => {
         setBusinesses(businesses);
         });
     }
-
-    
 
     return (
             <div>
@@ -29,4 +27,4 @@ const MyGalleries = () => {
         )
 }
 
-export default MyGalleries;
+export default FoodGalleries;

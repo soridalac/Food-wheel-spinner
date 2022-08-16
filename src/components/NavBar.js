@@ -8,8 +8,7 @@ export default function Navbar() {
         Tasty Food
       </Link>
       <ul>
-        <CustomLink to="/mygalleries">MyGalleries</CustomLink>
-        <CustomLink to="/wheelspinner">WheelSpinner</CustomLink>
+        <CustomLink to="/foodgalleries">FoodGalleries</CustomLink>
       </ul>
     </nav>
   )
