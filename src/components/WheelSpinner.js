@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./WheelSpinner.css";
 
 const WheelSpinner = () => {
-
+    // eslint-disable-next-line
     const [businesses, setBusinesses] = useState(['taco', 'dessert', 'cake', 'boba', 'sushi', 'burger', 'pizza', 'ice cream', 'sandwich']);
     // const [radius, setRadius] = useState(75); // PIXELS
     const [rotate, setRotate] = useState(0); // DEGREES
@@ -10,12 +10,13 @@ const WheelSpinner = () => {
     const [angle, setAngle] = useState(0); // RADIANS
     const [top, setTop] = useState(null); // INDEX
     const [offset, setOffset] = useState(null); // RADIANS
+    // eslint-disable-next-line
     const [net, setNet] = useState(null); // RADIANS
+    // eslint-disable-next-line
     const [result, setResult] = useState(null); // INDEX
     const [spinning, setSpinning] = useState(false);
 
     const channel = new BroadcastChannel('react_connect');
-
   useEffect(() => {
     // generate canvas wheel on load
     renderWheel();
